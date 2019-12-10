@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="nav-link-wrapper active-nav-link">
+            <a href="index.html">Home</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="about.html">About</a>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="brand">
+            NATHAN SAIDE
+          </div>
+        </div>
+      </div>
+
+      <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/cycling.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logo/omega.png" alt="" />
+              </div>
+
+              <div class="subtitle">I built this cycling images thingy</div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image:url(images/chef.jpg)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logo/profile.png" alt="" />
+              </div>
+
+              <div class="subtitle">I built this filter to search through any end point on "Just Eat" to find the food you can eat and ommit any <a href="https://allergen-menu.herokuapp.com/">Allergy</a> you may have</div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image:url(images/guineaPigs.jpg)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logo/omega.png" alt="" />
+              </div>
+
+              <div class="subtitle">I built this cycling images thingy</div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image:url(images/coding.jpg)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logo/omega.png" alt="" />
+              </div>
+
+              <div class="subtitle">I built this cycling images thingy</div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image:url(images/touristCycling.jpg)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logo/omega.png" alt="" />
+              </div>
+
+              <div class="subtitle">I built this cycling images thingy</div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image:url(images/housing.jpg)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logo/omega.png" alt="" />
+              </div>
+
+              <div class="subtitle">I built this cycling images thingy</div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image:url(images/handlebars.jpg)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logo/omega.png" alt="" />
+              </div>
+
+              <div class="subtitle">I built this cycling images thingy</div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image:url(images/cruiseShip.jpg)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logo/omega.png" alt="" />
+              </div>
+
+              <div class="subtitle">I built this cycling images thingy</div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image:url(images/sunset.jpg)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logo/omega.png" alt="" />
+              </div>
+
+              <div class="subtitle">I built this cycling images thingy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+      
+        portfolioItems.forEach(portfolioItem => {
+          portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.add('image-blur');
+          });
+      
+          portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.remove('image-blur');
+          });
+        });
+      
+      </script>
+</html>
